@@ -4,10 +4,47 @@ import "fmt"
 
 
 func main() {
-	// TODO: Implement a simple Go program
-	fmt.Println(HelloFunction())
+	// Got Username and Password from keyboard
+	var username string
+	var password string
+
+	fmt.Print("Username: ")
+	fmt.Scanln(&username)
+	fmt.Print("Password: ")
+	fmt.Scanln(&password)
+	// Call function LogIn
+
+	LogIn(username, password)
 }
 
 func HelloFunction() string {
 	return "Hello"
 }
+<<<<<<< HEAD
+=======
+
+func Add(a int, b int) int {
+	return a + b
+}
+
+func Minus(a int, b int) int {
+	return a - b
+}
+
+func UserLogin(username string, password string) bool {
+	if username == "admin" && password == "password" {
+		return true
+	} else {
+		return false
+	}
+}
+
+// Use function UserLogin
+func LogIn(username string, password string) {
+	if UserLogin(username, password) {
+		fmt.Println("Login successful")
+	} else {
+		fmt.Println("Login failed")
+	}
+}
+>>>>>>> 12c9e2610d393fc2a8c273860d2150b20a964605
