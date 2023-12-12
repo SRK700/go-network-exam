@@ -19,10 +19,25 @@ func TestAdd(t *testing.T) {
     }
 }
 
+<<<<<<< HEAD
 func TestMinus(t *testing.T){
     expected :=1
     if got := Minus(5, 4); got != expected {
         t.Errorf("Minus(5, 4) = %v,want %v", got, expected)
     }
 
+=======
+func TestMinus(t *testing.T) {
+    expected := 1
+    if got := Minus(3, 2); got != expected {
+        t.Errorf("Minus(3, 2) = %v, want %v", got, expected)
+    }
+}
+
+func TestUserLogin(t *testing.T) {
+    expected := true
+    if got := UserLogin("admin", "password"); got != expected {
+        t.Errorf("UserLogin(\"admin\", \"admin\") = %v, want %v", got, expected)
+    }
+>>>>>>> 9b7473c29d5d0ef34f5a12460c01766d44c96cb9
 }
