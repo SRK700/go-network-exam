@@ -18,3 +18,11 @@ func TestAdd(t *testing.T) {
         t.Errorf("Add(2, 3) = %v, want %v", got, expected)
     }
 }
+
+func TestMinus(t *testing.T){
+    expected :=1
+    if got := Minus(5, 4); got != expected {
+        t.Errorf("Minus(5, 4) = %v,want %v", got, expected)
+    }
+
+}
