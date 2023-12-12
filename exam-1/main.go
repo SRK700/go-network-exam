@@ -20,8 +20,6 @@ func main() {
 func HelloFunction() string {
 	return "Hello"
 }
-<<<<<<< HEAD
-=======
 
 func Add(a int, b int) int {
 	return a + b
@@ -47,4 +45,3 @@ func LogIn(username string, password string) {
 		fmt.Println("Login failed")
 	}
 }
->>>>>>> 12c9e2610d393fc2a8c273860d2150b20a964605
